@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:background="@android:color/black"
+        android:paddingBottom="5dp"
+        android:text="The turtle walk"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/vv"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView45"
+        android:background="@android:color/holo_orange_light" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="1000dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp">
+
+        <RelativeLayout
+            android:layout_width="1000dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:elevation="15dp">
+
+            <ImageView
+                android:id="@+id/imgone"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/oliveone" />
+
+            <ImageView
+                android:id="@+id/imgtwo"
+                android:layout_width="250dp"
+                android:layout_height="230dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/imgone"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/olivetwo" />
+
+            <ImageView
+                android:id="@+id/imgthree"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_alignParentRight="false"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/imgtwo"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/olivethree" />
+
+            <ImageView
+                android:id="@+id/imgfour"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/imgthree"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/olivefour" />
+
+            <ImageView
+                android:id="@+id/imgfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/imgfour"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/olivefive" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="6dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dp"
+                android:background="@color/cardview_light_background"
+                android:elevation="24dp"
+                android:padding="9dp"
+                android:text="A turtle walk refers to the walk of volunteers along the beach every night during nesting seasons of sea turtles. During the walk they collect turtle eggs, and relocate them to a safer places. When turtle hatchlings emerge, volunteers release them safely into the sea.\n\nRomulus Whitaker's 'turtle walks' begun in the early 1970s, started as a turtle monitoring programme on the Chennai coast and initiated surveys along the mainland coast and also in the offshore islands.\n\nAnn Joseph, working at the snake park, helped with setting up WWF in Mumbai and then became involved with the turtle walks soon after. Due to her efforts, the popularity of the walks grew and many college students joined in. Later Preston Ahimaz the WWF coordinator and then Bhanumathi, continued the 'turtle walks for many years. The eggs that were collected in these walks were relocated in one of the Forest Department's hatcheries on the coast.  \n\nThe ultimate turtle walker though was Satish Bhaskar. In a period of around 4 years in the 1970s, Satish walked over 4000 km along the Indian coastline - mainland as well as Islands - collecting information on sea turtles, their tracks and their nesting. Satish walked in the Andaman and Nicobar Islands, Lakshadweep, Odisha and most parts of the mainland coast.\n\n  The turtle hatcheries in Chennai were operated first by the Madras Snake Park, followed by the CMFRI and Tamil Nadu Forest Department. By the late 1980s the state hatcheries in Tamil Nadu were closed due to lack of funding, and the program returned to the realm of NGOs. The Chennai programme was based out of a city and had more access to young, educated environmental enthusiasts. Once the forest department closed down their hatcheries in the late 1980s, two ambitious youngsters decided to set up a students' group, set up hatcheries and continue the turtle walks. Thus the Students' Sea Turtle Conservation Network (SSTCN) was born in October 1988 in Chennai. This volunteer group continues to patrol the beach every night and organises public turtle walks every weekend in the turtle season. The Tree Foundation also conducts public turtle walks during the season. "
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

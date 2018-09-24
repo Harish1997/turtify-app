@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="@color/nestingcol">
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:background="@android:color/black"
+                android:paddingBottom="5dp"
+                android:text="Olive ridley nesting"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/vvv"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/textView45"
+                android:background="@android:color/holo_orange_light" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="61dp"
+                android:padding="5dp"
+                android:text="Stages of successful nesting,with emerging crawl \n\n(A)-> sand misted or thrown back over the emerging track \n\n(B)-> a secondary body pit and escrapment,with sand thrown in the vicinity \n\n(C)-> and the returning crawl \n\n(D)-> Trails left behind\n\n(E)-> marks the high tide"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="700dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView18"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ss" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

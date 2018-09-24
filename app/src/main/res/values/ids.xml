@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtTimerDay" type="id">txtTimerDay</item>
+    <item name="txtTimerHour" type="id">txtTimeHour</item>
+    <item name="date" type="id">date</item>
+</resources>

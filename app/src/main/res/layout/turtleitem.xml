@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1400dp">
+
+
+            <TextView
+                android:id="@+id/categorytt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="3dp"
+                android:text="Live Turtle"
+                android:textColor="@color/catcol"
+                android:textStyle="italic"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/titletur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/categorytt"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Mammoth Turtle found in the shores of Besant nagar beach"
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/leadertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/titletur"
+                android:layout_marginLeft="5dp"
+                android:text="Harish Anantharaman" />
+
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/leadertxt"
+                android:layout_margin="5dp"
+                android:text="As dated on: 18th July, 2018"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.jsibbold.zoomage.ZoomageView
+                android:id="@+id/turtleimg"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/datetext"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/olive1"
+                app:zoomage_animateOnReset="true"
+                app:zoomage_autoCenter="true"
+                app:zoomage_autoResetMode="UNDER"
+                app:zoomage_maxScale="8"
+                app:zoomage_minScale="0.6"
+                app:zoomage_restrictBounds="false"
+                app:zoomage_translatable="true"
+                app:zoomage_zoomable="true" />
+
+            <TextView
+                android:id="@+id/captiontxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/turtleimg"
+                android:padding="3dp"
+                android:text="A view of the giant turtle which we found"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/captiontxt"
+                android:layout_marginTop="2dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/desctxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/line"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="6dp"
+                android:text="There’s a commotion ahead — a nest has been spotted. A turtle has left a trail on the sand as it slid into the sea. Anand and Gopi get to work, as we settle on the edges of a boundary they sketch around it on the sand. We watch with bated breath — they poke an aluminium rod into the heaped sand. They are looking for the nest’s core that holds the eggs. Loose sand indicates that it has just been meddled with. \n\nTheir head bent low and eyes focussed, they investigate the grey-brown sand in the dark. But there’s nothing — it looks like the turtle was scared away after it built the nest.  \n\nBut our Olive Ridley that started laying eggs is lucky. Her work is done — she has laid 131 eggs. Now comes the crucial task: covering up the nest so that the eggs are safe. She slides sand over the nest with her two flippers. This takes a lot of effort. She’s almost done. A little bit of sand to top it off, and she will be on her way back...
+
+"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/desctxt"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/leadertxt"
+                android:layout_marginEnd="15dp"
+                android:tint="@android:color/holo_green_light"
+                app:srcCompat="@drawable/cast_ic_notification_small_icon" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

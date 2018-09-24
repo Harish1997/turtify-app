@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "502203893116",
+    "firebase_url": "https://turtify.firebaseio.com",
+    "project_id": "turtify",
+    "storage_bucket": "turtify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502203893116:android:6fb090ebc39c4cfa",
+        "android_client_info": {
+          "package_name": "rexzen.turtify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502203893116-7e8ab6ismtqujrpsd1ai5iq1skvklu18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbHlAuuJUtsv2LJGbsQOgmvh2xkorJBwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
